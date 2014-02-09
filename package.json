@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x",
-    "requirejs": "x.x",
-    "colors": "x.x",
-    "xml2js": "x.x"
+    "express": "*",
+    "requirejs": "*",
+    "colors": "*",
+    "xml2js": "*"
   }
 }
