@@ -3,6 +3,7 @@
 #
 
 PROJECT = "a ghetto interface to the bart etd api"
+CWD = `pwd`
 
 install: ;@echo "Installing ${PROJECT}........"
 	npm install
@@ -14,4 +15,4 @@ clean: ;
 	rm -rf ./node_modules
 
 symlink: ;       
-	ln -s ./commute /usr/local/bin/commute 
+	ln -s $(CWD)/commute.js /usr/local/bin/commute

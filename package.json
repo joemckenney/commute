@@ -2,7 +2,7 @@
   "name": "commute",
   "description": "mediate communication with bart/muni api",
   "version": "0.0.1",
-  "private": true,
+  "preferGlobal": true,
   "dependencies": {
     "express": "*",
     "requirejs": "*",
