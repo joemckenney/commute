@@ -4,6 +4,69 @@
 
   var args = [],
       log = console.log;
+  
+  if(process.argv[2] == '--help') {
+    log('################################'.rainbow);
+    log('################################'.rainbow);
+    log('required args:'.red);
+    log('                                ');
+    log('@param station: '.cyan);
+    log(' 12th ==>  12th St. Oakland City Center'.cyan);
+    log(' 16th ==>  16th St. Mission (SF)'.cyan);
+    log(' 19th ==>  19th St. Oakland'.cyan);
+    log(' 24th ==>  24th St. Mission (SF)'.cyan);
+    log(' ashb ==>  Ashby (Berkeley)'.cyan);
+    log(' balb ==>  Balboa Park (SF)'.cyan);
+    log(' bayf ==>  Bay Fair (San Leandro)'.cyan);
+    log(' cast ==>  Castro Valley'.cyan);
+    log(' civc ==>  Civic Center (SF)'.cyan);
+    log(' cols ==>  Coliseum/Oakland Airport'.cyan);
+    log(' colm ==>  Colma'.cyan);
+    log(' conc ==>  Concord'.cyan);
+    log(' daly ==>  Daly City'.cyan);
+    log(' dbrk ==>  Downtown Berkeley'.cyan);
+    log(' dubl ==>  Dublin/Pleasanton'.cyan);
+    log(' deln ==>  El Cerrito del Norte'.cyan);
+    log(' plza ==>  El Cerrito Plaza'.cyan);
+    log(' embr ==>  Embarcadero (SF)'.cyan);
+    log(' frmt ==>  Fremont'.cyan);
+    log(' ftvl ==>  Fruitvale (Oakland)'.cyan);
+    log(' glen ==>  Glen Park (SF)'.cyan);
+    log(' hayw ==>  Hayward'.cyan);
+    log(' lafy ==>  Lafayette'.cyan);
+    log(' lake ==>  Lake Merritt (Oakland)'.cyan);
+    log(' mcar ==>  MacArthur (Oakland)'.cyan);
+    log(' mlbr ==>  Millbrae'.cyan);
+    log(' mont ==>  Montgomery St. (SF)'.cyan);
+    log(' nbrk ==>  North Berkeley'.cyan);
+    log(' ncon ==>  North Concord/Martinez'.cyan);
+    log(' orin ==>  Orinda'.cyan);
+    log(' pitt ==>  Pittsburg/Bay Point'.cyan);
+    log(' phil ==>  Pleasant Hill'.cyan);
+    log(' powl ==>  Powell St. (SF)'.cyan);
+    log(' rich ==>  Richmond'.cyan);
+    log(' rock ==>  Rockridge (Oakland)'.cyan);
+    log(' sbrn ==>  San Bruno'.cyan);
+    log(' sfia ==>  San Francisco Int\'l Airport'.cyan);
+    log(' sanl ==>  San Leandro'.cyan);
+    log(' shay ==>  South Hayward'.cyan);
+    log(' ssan ==>  South San Francisco'.cyan);
+    log(' ucty ==>  Union City'.cyan);
+    log(' wcrk ==>  Walnut Creek'.cyan);
+    log(' wdub ==>  West Dublin'.cyan);
+    log(' woak ==>  West Oakland'.cyan);
+    log('                                ');
+    log('@param direction {n|s} (optional)'.cyan); 
+    log('                                ');
+    log('                                ');
+    log('examples:'.cyan)
+    log('commute lake'.green)
+    log('                                ');
+    log('commute ftvl'.green)
+    log('################################'.rainbow);
+    log('################################'.rainbow);
+    return;
+  }
  /**
   * @param {string} station - see http://api.bart.gov/docs/overview/abbrev.aspxn
   * @param {string} direction {n|s}
@@ -22,7 +85,7 @@
   
   http.get({
     'host': 'localhost',
-    'port': 3000,
+    'port': 3636,
     'path': path
   }, function(res) {
     var buffer = '';
