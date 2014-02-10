@@ -101,7 +101,10 @@
           station = root.station[0],
           time = root.time,
           etd = station.etd;
-
+      log("  ____.-==-, _______  _______  _______  _..._ ");
+      log(" {'''''LILI|[' ' '' ][''''''']['' ''''][LI LI]");
+      log(" /_OO====OO`'OO---OO''OO---OO''OO---OO`'OO-OO'");
+      log(" ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
       log(('Current Time: '+time).blue);
       log('<===========================================>'.rainbow);
       
