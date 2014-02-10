@@ -3,9 +3,11 @@
       http = require('http');
 
   var args = [],
-      log = console.log;
+      log = console.log,
+      helpFlags = ['help', '-help', '--help'],
+      arg2 = process.argv[2];
   
-  if(process.argv[2] == '--help') {
+  if(helpFlags.indexOf(arg2) > -1) {
     log('################################'.rainbow);
     log('################################'.rainbow);
     log('required args:'.red);
