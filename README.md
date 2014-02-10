@@ -16,10 +16,7 @@ make symlink #(optional)
 make server
 
 commute ftvl #(fruitvale)
-
-#or
-
 commute lake #(lake merrite)
 
-# see http://api.bart.gov/docs/overview/abbrev.aspx for abbrevs
+commute --help #for abbrevs
 ```
